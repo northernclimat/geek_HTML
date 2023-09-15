@@ -14,17 +14,29 @@
 }
 
 body {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
+}
+
+.center {
+    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 600px);
 }
 
 header {
     margin-top: 51px;
     margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
 
+}
+.main__content{
+    display: flex;
+    gap:41px;
 }
 
 footer {
@@ -37,69 +49,81 @@ footer {
 
 .main_menu__a {
     color: #000;
-    font-family: Gilroy-Medium sans-serif;
+    font-family: Gilroy-Medium;
     font-size: 14px;
     line-height: 17px;
     padding-right: 15px;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .main_menu__a:hover {
     color: #F25822;
-    font-family: Gilroy-Medium sans-serif;
+    font-family: Gilroy-Medium;
     font-size: 14px;
+}
+
+.main__content__left_side{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .main__content__left_side__h1 {
     color: #000;
-    font-family: Gilroy-Bold sans-serif;
+    font-family: Gilroy-Bold;
     font-size: 60px;
     font-weight: 800;
     line-height: 70px;
     max-width: 522px;
-    margin-bottom: 17px;
 }
 
 .main__content__left_side__p {
     max-width: 466px;
     max-height: 48px;
     color: #888;
-    font-family: Gilroy-Medium sans-serif;
+    font-family: Gilroy-Medium;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 37px;
 }
 
-.main__content__left_side__buttons__start {
-    color: #FFF;
-    font-family: Gilroy-Bold sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    border-radius: 50px;
-    background: #F25822;
-    box-shadow: 4px 4px 8px 0;
-    width: 140px;
-    height: 50px;
-    margin-right: 72px;
-}
 
-.main__content__left_side__buttons a {
+.main__content__left_side__buttons{
+    display: flex;
+    gap:10%;
+}
+.main__content__left_side__buttons button {
     color: #AAA;
-    font-family: Gilroy-Bold sans-serif;
+    font-family: Gilroy-Bold;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
     text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 0;
+    width: 140px;
+    height: 50px;
+}
+.main__content__left_side__buttons button:hover {
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-weight: 400;
+    width: 140px;
+    height: 50px;
 }
 
 .footer__logos {
     margin-top: 97px;
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer__logos__logo {
-    margin-right: 55px;
-}
